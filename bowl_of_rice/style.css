@@ -9,9 +9,48 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    min-height: 80px;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    overflow: hidden;
+    background-color: #183D3D;
+}
+nav a{
+    color: #93B1A6;
+    float: left;
+    height: 100%;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.header-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-image img {
+    width: 100%;
+    display: block;
+
+}
+.nav-link{
+    display: block;
+}
+.register{
+    float: right;
+}
+
 .container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+    /*overflow-y: scroll;*/
     height: 100vh;
     scroll-behavior: smooth;
 }
@@ -28,14 +67,19 @@ section h1 {
     color: #93B1A6;
 }
 
-.one {
+.first-page {
     background-color: #040D12;
+
 }
 
-.two {
+
+.second-page {
     background-color: #183D3D;
 }
 
-.three {
+.third-page {
     background-color: #5C8374;
+}
+.forth-page {
+    background-color: #181c1f;
 }
