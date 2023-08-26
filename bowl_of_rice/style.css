@@ -1,0 +1,41 @@
+*, html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+section h1 {
+    color: #93B1A6;
+}
+
+.one {
+    background-color: #040D12;
+}
+
+.two {
+    background-color: #183D3D;
+}
+
+.three {
+    background-color: #5C8374;
+}
