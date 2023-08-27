@@ -136,7 +136,7 @@ section h1 {
     .header-image h1 {
         font-size: 2rem;
     }
-    .first-page{
-        display: block;
+    .right{
+        display: none;
     }
 }
