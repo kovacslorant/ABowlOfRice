@@ -17,11 +17,13 @@ header {
     align-items: center;
 }
 
-nav{
+nav {
     overflow: hidden;
     background-color: #183D3D;
+
 }
-nav a{
+
+nav a {
     color: #93B1A6;
     float: left;
     height: 100%;
@@ -30,10 +32,14 @@ nav a{
     text-decoration: none;
     font-size: 17px;
 }
-.header-image {
+
+.header-container {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+.header-image {
+    position: relative;
 }
 
 .header-image img {
@@ -41,15 +47,35 @@ nav a{
     display: block;
 
 }
-.nav-link{
+.header-image h1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Oleo Script', cursive;
+    color: #040D12;
+    padding-bottom: 5px;
+
+}
+
+
+
+.nav-link {
     display: block;
 }
-.register{
+
+nav a:hover {
+    background-color: #181c1f;
+}
+
+.register {
     float: right;
 }
 
 .container {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     /*overflow-y: scroll;*/
     height: 100vh;
     scroll-behavior: smooth;
@@ -69,8 +95,30 @@ section h1 {
 
 .first-page {
     background-color: #040D12;
+    display: flex;
+}
+.split {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
 
 }
+.left{
+    left: 0;
+    height: 100%;
+}
+.right{
+    right: 0;
+    /*background-image: url("images/redd-f-Bxzrd0p6yOM-unsplash.jpg");*/
+}
+.right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 
 .second-page {
@@ -80,6 +128,15 @@ section h1 {
 .third-page {
     background-color: #5C8374;
 }
+
 .forth-page {
     background-color: #181c1f;
+}
+@media only screen and (max-width: 480px) {
+    .header-image h1 {
+        font-size: 2rem;
+    }
+    .first-page{
+        display: block;
+    }
 }
