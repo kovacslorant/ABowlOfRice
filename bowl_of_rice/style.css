@@ -163,7 +163,7 @@ section h1 {
 
 @media only screen and (max-width: 480px) {
     .header-image h1 {
-        font-size: 2rem;
+        font-size: 22px;
     }
 
     .left {
@@ -195,6 +195,9 @@ p {
     .left h1 {
      margin-top: 30px;
     }
+    p {
+        font-size: 16px;
+    }
 
     .introduction {
         width: 100%;
@@ -204,6 +207,12 @@ p {
 @media  (min-width: 769px) and (max-width: 1024px) {
     .introduction {
         width: 80%;
+        height: auto;
+    }
+}
+@media  (min-width: 1025px) {
+    .introduction {
+        width: 90%;
         height: auto;
     }
 }
