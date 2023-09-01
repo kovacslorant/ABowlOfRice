@@ -129,7 +129,7 @@ section h1 {
     margin: auto;
     height: 65vh;
     width: 65%;
-    font-size: 18px;
+    font-size: 20px;
     color: #93B1A6;
 }
 
@@ -151,6 +151,60 @@ section h1 {
 
 .second-page {
     background-color: #183D3D;
+    /*background-color:  #040D12;*/
+}
+
+.menu {
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.m-left {
+    left: 0;
+}
+
+.m-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.m-right {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.m-right button {
+    height: 5%;
+    width: 15%;
+    margin-top: 40px;
+    border: none;
+    font-weight: bold;
+    background-color: #040D12;
+    color: #93B1A6;
+}
+
+.m-right button:hover {
+    background-color: #5C8374;
+    color: #040D12;
+}
+
+.m-right h1 {
+    margin: 250px 0 50px;
+}
+
+.menu-intro {
+    font-size: 22px;
+    color: #93B1A6;
+    margin: 0 30px;
+    text-align: justify;
 }
 
 .third-page {
@@ -174,16 +228,50 @@ section h1 {
         width: 100%;
         height: auto;
     }
-p {
-    font-size: 16px;
-}
+
+    p {
+        font-size: 16px;
+    }
 
     .right {
         display: none;
     }
+    .second-page{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .menu{
+        height: 90%;
+        width: 50%;
+    }
+
+    .m-left {
+        margin:0;
+        align-items: start;
+    }
+    .m-left img{
+        height: 80%;
+        margin-top: 20px;
+    }
+
+    .m-right {
+        width: 100%;
+    }
+
+    .m-right h1 {
+        font-size: 22px;
+        margin-top: 50px;
+    }
+
+    .menu-intro {
+        font-size: 22px;
+        color: #93B1A6;
+
+
+    }
 }
 
-@media  (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 840px) {
     .right {
         width: 40%;
     }
@@ -193,8 +281,9 @@ p {
     }
 
     .left h1 {
-     margin-top: 30px;
+        margin-top: 100px;
     }
+
     p {
         font-size: 16px;
     }
@@ -203,14 +292,24 @@ p {
         width: 100%;
         height: auto;
     }
+
+    .m-right{
+        width: 60%;
+    }
+
+    .m-left{
+        width: 40%;
+    }
 }
-@media  (min-width: 769px) and (max-width: 1024px) {
+
+@media (min-width: 840px) and (max-width: 1024px) {
     .introduction {
         width: 80%;
         height: auto;
     }
 }
-@media  (min-width: 1025px) {
+
+@media (min-width: 1025px) {
     .introduction {
         width: 90%;
         height: auto;
